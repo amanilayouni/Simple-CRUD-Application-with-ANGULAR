@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<h2>{{prod.nom}} </h2>
+<h3 style="color: red;" *ngIf="prod.qte==0;else trouvable">produit indisponible </h3>
+<ng-template #trouvable >
+
+    <h2 style="color: green;"> produit disponible</h2>
+</ng-template>
+<button (click)="back()" class="btn btn-success" >retour </button>

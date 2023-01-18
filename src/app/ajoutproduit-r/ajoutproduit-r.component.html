@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<form (ngSubmit)="onsubmit()" [formGroup]="f">
+    <div style="width:200px; margin-left:550px;">
+  <legend><b>AJOUTER UN PRODUIT</b> </legend>
+  <div class="mb-3">
+    <input type="text" name="id" formControlName="id"  placeholder="ID DU PRODUIT ">
+  </div>
+  <input type="text"  name="nom" formControlName="nom" placeholder="NOM DU PRODUIT">
+
+  <br>
+  <br>
+  <div class="mb-3">
+    <div class="mb-3">
+
+        <input type="text"  name="prix" formControlName="prix"   placeholder="PRIX">
+      </div>
+    <div class="mb-3">
+        <input type="text"  name ="qte" formControlName="qte" placeholder="QUANTITE">
+      </div>
+      <div class="mb-3">
+          <button type="submit" class="btn btn-primary">AJOUTER</button>
+        </div>
+  </div>
+</div>
+
+    
+   
+    
+</form>
