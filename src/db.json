@@ -1,0 +1,48 @@
+{
+  "produits": [
+    {
+      "id": 5,
+      "nom": "pc",
+      "prix": 2000,
+      "qte": 0,
+      "urlimg": "./assets/images/pc.jpg"
+    },
+    {
+      "id": "1",
+      "nom": "IPHONE",
+      "prix": "2000",
+      "qte": "22",
+      "urlimg": "./assets/images/iphone.jpeg"
+    },
+    {
+      "id": "2",
+      "nom": "CASQUE",
+      "prix": "50",
+      "qte": "10",
+      "urlimg": "./assets/images/casque.jpg"
+    },
+    {
+      "id": "22",
+      "nom": "SOURIS",
+      "prix": "30",
+      "qte": "11",
+      "urlimg": "./assets/images/souris.jpg"
+    }
+  ],
+  "users": [
+    {
+      "firstname": "amani",
+      "lastname": "layouni",
+      "email": "amani@gmail.com",
+      "password": "amani",
+      "id": 3
+    },
+    {
+      "firstname": "imen",
+      "lastname": "layouni",
+      "email": "imen@gmail.com",
+      "password": "imen",
+      "id": 4
+    }
+  ]
+}

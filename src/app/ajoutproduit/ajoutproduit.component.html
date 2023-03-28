@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<form (ngSubmit)="onsubmit(f)" #f=ngForm>
+        <div style="width:300px; margin-left:550px;">
+      <legend><b>AJOUTER UN PRODUIT</b></legend>
+      <div class="mb-3">
+        <input type="text" name="id"  ngModel placeholder="ID DU PRODUIT ">
+      </div>
+      <input type="text"  name="nom" ngModel placeholder="NOM DU PRODUIT ">
+      <div class="mb-3">
+        <div class="mb-3">
+<br>
+            <input type="text"  name="prix"  ngModel placeholder="PRIX">
+          </div>
+        <div class="mb-3">
+            <input type="text"  name ="qte" ngModel placeholder="QUANTITE ">
+          </div>
+          <div class="mb-3">
+              <button type="submit" class="btn btn-primary">AJOUTER</button>
+            </div>
+      </div>
+    </div>
+
+        
+       
+        
+    </form>

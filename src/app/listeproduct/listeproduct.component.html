@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<table class="table table-striped" *ngIf="Productf;else vide">
+    <thead>
+     
+
+        <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>prix</th>
+            <th>quantite</th>
+            <th><button (click)="afficher()">{{aff}}</button></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of Productf">
+        <td>{{p.id}}</td>
+
+        <!-- /<td> <a routerLink="/product/{{p.id}}" >{{p.nom|uppercase}}</a></td> -->
+        <td> <a [routerLink]="['/product',p.id]" >{{p.nom|uppercase}}</a></td>
+        <td>{{p.prix|number:'.2-2'}}</td>
+        <td>{{p.qte}}</td>
+        <td><img *ngIf="aff=='masquer'" [src]=p.urlimg width="100px"></td>
+        <td><button (click)="supprimer(p.id)" > <i class="bi bi-trash"></i></button></td>
+    </tr>
+    </tbody>
+</table>
+
+<ng-template #vide>
+    <h2 style="color: red;">le tableau est vide </h2>
+</ng-template>
